@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzy.dao.Order_mDao">
+    <select id="listOrder_mByNo" parameterType="com.pzy.pojo.query.Order_mQuery" resultType="com.pzy.entity.Order_m">
+        select *
+        from businessdb.hit_order_m
+        <where>
+            <if test="order_no != null and order_no != ''">
+                and `order_no` like concat('%',#{order_no},'%')
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteOrder_mById" parameterType="int">
+        delete from businessdb.hit_order_m where order_id=#{order_id}
+    </delete>
+
+    <update id="updateOrder_m" parameterType="com.pzy.entity.Order_m">
+        update businessdb.hit_order_m
+        set user_id = #{user_id},order_no = #{order_no},order_date=#{order_date},date=#{date},audit=#{audit},addr_id=#{addr_id},remark=#{remark}
+        where order_id = #{order_id}
+    </update>
+
+    <insert id="addOrder_m" parameterType="com.pzy.entity.Order_m">
+        insert into businessdb.hit_order_m(user_id,order_no,order_date,date,audit,addr_id,remark) values (#{user_id},#{order_no},#{order_date},#{date},#{audit},#{addr_id},#{remark})
+    </insert>
+</mapper>

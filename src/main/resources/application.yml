@@ -1,0 +1,23 @@
+server:
+  address: 10.236.54.137
+  port: 8080
+
+# ??????
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: MySQL
+    url: jdbc:mysql://localhost:3306/businessdb?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.pzy.pojo
+  mapper-locations: classpath:/mybatis/*.xml
+
+logging:
+  file:
+    name: log/log.log
+  level:
+    root: info
+    com.pzy: debug

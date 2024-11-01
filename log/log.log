@@ -1,0 +1,61 @@
+2024-10-29 21:54:21.374  INFO 3080 --- [restartedMain] com.pzy.SpringbootMybatisApplication     : Starting SpringbootMybatisApplication using Java 23 on PZY-ZhengJiuZhe with PID 3080 (D:\java\javapro\springboot\target\classes started by pzy in D:\java\javapro\springboot)
+2024-10-29 21:54:21.384 DEBUG 3080 --- [restartedMain] com.pzy.SpringbootMybatisApplication     : Running with Spring Boot v2.4.3, Spring v5.3.4
+2024-10-29 21:54:21.384  INFO 3080 --- [restartedMain] com.pzy.SpringbootMybatisApplication     : No active profile set, falling back to default profiles: default
+2024-10-29 21:54:21.488  INFO 3080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-29 21:54:21.489  INFO 3080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-29 21:54:23.053  INFO 3080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-10-29 21:54:23.063  INFO 3080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-29 21:54:23.063  INFO 3080 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2024-10-29 21:54:23.183  INFO 3080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-29 21:54:23.183  INFO 3080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2024-10-29 21:54:23.773  INFO 3080 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-29 21:54:23.934  WARN 3080 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-29 21:54:24.072  INFO 3080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-29 21:54:24.142  INFO 3080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-29 21:54:24.152  INFO 3080 --- [restartedMain] com.pzy.SpringbootMybatisApplication     : Started SpringbootMybatisApplication in 3.449 seconds (JVM running for 6.36)
+2024-10-29 21:56:18.137  INFO 3080 --- [http-nio-10.236.54.137-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-29 21:56:18.137  INFO 3080 --- [http-nio-10.236.54.137-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-29 21:56:18.137  INFO 3080 --- [http-nio-10.236.54.137-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-29 21:56:18.257  INFO 3080 --- [http-nio-10.236.54.137-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2024-10-29 21:56:18.638 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-1] c.pzy.dao.Order_dDao.listOrder_dByName   : ==>  Preparing: select * from businessdb.hit_order_d
+2024-10-29 21:56:18.656 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-1] c.pzy.dao.Order_dDao.listOrder_dByName   : ==> Parameters: 
+2024-10-29 21:56:18.696 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-1] c.pzy.dao.Order_dDao.listOrder_dByName   : <==      Total: 7
+2024-10-29 21:56:22.269 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-5] com.pzy.dao.UserDao.listUserByName       : ==>  Preparing: select * from businessdb.hit_user
+2024-10-29 21:56:22.270 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-5] com.pzy.dao.UserDao.listUserByName       : ==> Parameters: 
+2024-10-29 21:56:22.290 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-5] com.pzy.dao.UserDao.listUserByName       : <==      Total: 10
+2024-10-29 22:04:38.942  WARN 3080 --- [http-nio-10.236.54.137-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/businessdb?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 496637
+2024-10-29 22:04:38.976 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-4] com.pzy.dao.UserDao.listUserByName       : ==>  Preparing: select * from businessdb.hit_user
+2024-10-29 22:04:38.976 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-4] com.pzy.dao.UserDao.listUserByName       : ==> Parameters: 
+2024-10-29 22:04:38.987 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-4] com.pzy.dao.UserDao.listUserByName       : <==      Total: 10
+2024-10-29 22:04:48.536 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-2] com.pzy.dao.UserDao.listUserByName       : ==>  Preparing: select * from businessdb.hit_user WHERE `name` like concat('%',?,'%')
+2024-10-29 22:04:48.542 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-2] com.pzy.dao.UserDao.listUserByName       : ==> Parameters: 裴振宇(String)
+2024-10-29 22:04:48.573 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-2] com.pzy.dao.UserDao.listUserByName       : <==      Total: 1
+2024-10-29 22:04:59.731 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-6] com.pzy.dao.Order_mDao.listOrder_mByNo   : ==>  Preparing: select * from businessdb.hit_order_m
+2024-10-29 22:04:59.731 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-6] com.pzy.dao.Order_mDao.listOrder_mByNo   : ==> Parameters: 
+2024-10-29 22:04:59.755 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-6] com.pzy.dao.Order_mDao.listOrder_mByNo   : <==      Total: 10
+2024-10-29 22:06:02.277  WARN 3080 --- [http-nio-10.236.54.137-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/businessdb?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 62522
+2024-10-29 22:06:02.317 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-9] com.pzy.dao.Order_mDao.addOrder_m        : ==>  Preparing: insert into businessdb.hit_order_m(user_id,order_no,order_date,date,audit,addr_id,remark) values (?,?,?,?,?,?,?)
+2024-10-29 22:06:02.317 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-9] com.pzy.dao.Order_mDao.addOrder_m        : ==> Parameters: 1(Integer), 2132353(String), 2024-5-2(String), 2024-5-2(String), (String), 1(Integer), 无(String)
+2024-10-29 22:06:02.357 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-9] com.pzy.dao.Order_mDao.addOrder_m        : <==    Updates: 1
+2024-10-29 22:06:03.348 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-3] com.pzy.dao.Order_mDao.addOrder_m        : ==>  Preparing: insert into businessdb.hit_order_m(user_id,order_no,order_date,date,audit,addr_id,remark) values (?,?,?,?,?,?,?)
+2024-10-29 22:06:03.348 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-3] com.pzy.dao.Order_mDao.addOrder_m        : ==> Parameters: 1(Integer), 2132353(String), 2024-5-2(String), 2024-5-2(String), (String), 1(Integer), 无(String)
+2024-10-29 22:06:03.372 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-3] com.pzy.dao.Order_mDao.addOrder_m        : <==    Updates: 1
+2024-10-29 22:06:04.178 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-1] com.pzy.dao.Order_mDao.addOrder_m        : ==>  Preparing: insert into businessdb.hit_order_m(user_id,order_no,order_date,date,audit,addr_id,remark) values (?,?,?,?,?,?,?)
+2024-10-29 22:06:04.179 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-1] com.pzy.dao.Order_mDao.addOrder_m        : ==> Parameters: 1(Integer), 2132353(String), 2024-5-2(String), 2024-5-2(String), (String), 1(Integer), 无(String)
+2024-10-29 22:06:04.206 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-1] com.pzy.dao.Order_mDao.addOrder_m        : <==    Updates: 1
+2024-10-29 22:06:07.293 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-5] com.pzy.dao.Order_mDao.listOrder_mByNo   : ==>  Preparing: select * from businessdb.hit_order_m
+2024-10-29 22:06:07.293 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-5] com.pzy.dao.Order_mDao.listOrder_mByNo   : ==> Parameters: 
+2024-10-29 22:06:07.302 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-5] com.pzy.dao.Order_mDao.listOrder_mByNo   : <==      Total: 13
+2024-10-29 22:08:29.337  WARN 3080 --- [http-nio-10.236.54.137-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/businessdb?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 142044
+2024-10-29 22:08:29.364 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-4] com.pzy.dao.UserDao.listUserByName       : ==>  Preparing: select * from businessdb.hit_user
+2024-10-29 22:08:29.364 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-4] com.pzy.dao.UserDao.listUserByName       : ==> Parameters: 
+2024-10-29 22:08:29.375 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-4] com.pzy.dao.UserDao.listUserByName       : <==      Total: 10
+2024-10-29 22:08:33.055 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-2] com.pzy.dao.UserDao.listUserByName       : ==>  Preparing: select * from businessdb.hit_user WHERE `name` like concat('%',?,'%')
+2024-10-29 22:08:33.056 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-2] com.pzy.dao.UserDao.listUserByName       : ==> Parameters: 裴振宇(String)
+2024-10-29 22:08:33.058 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-2] com.pzy.dao.UserDao.listUserByName       : <==      Total: 1
+2024-10-29 22:08:49.068 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-6] com.pzy.dao.UserDao.listUserByName       : ==>  Preparing: select * from businessdb.hit_user
+2024-10-29 22:08:49.068 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-6] com.pzy.dao.UserDao.listUserByName       : ==> Parameters: 
+2024-10-29 22:08:49.076 DEBUG 3080 --- [http-nio-10.236.54.137-8080-exec-6] com.pzy.dao.UserDao.listUserByName       : <==      Total: 10
+2024-10-29 22:16:53.104  INFO 3080 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-29 22:16:53.104  INFO 3080 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2024-10-29 22:16:53.104  INFO 3080 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
