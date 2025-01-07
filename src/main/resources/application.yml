@@ -1,5 +1,5 @@
 server:
-  address: 10.236.54.137
+  address: 0.0.0.0
   port: 8080
 
 # ??????
@@ -8,7 +8,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
     password: MySQL
-    url: jdbc:mysql://localhost:3306/businessdb?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    url: jdbc:mysql://localhost:3306/expiration
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
@@ -21,3 +21,4 @@ logging:
   level:
     root: info
     com.pzy: debug
+
