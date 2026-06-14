@@ -67,3 +67,7 @@ CREATE DATABASE expiration CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 在 IntelliJ IDEA 中等待 Maven 或 Gradle 依赖解析同步完毕后，直接运行 `SpringbootMybatisApplication.java` 主类。后端服务将默认在 `8080` 端口拉起。
 3. **前端对接注意：**
 若在微信开发者工具中进行本地回调调试，请确保在工具的 `本地设置` 中勾选 **“不校验合法域名、web-view（业务域名）、TLS版本以及HTTPS证书”**，并将请求基地址指向 `http://localhost:8080` 即可。
+
+### 六、 项目运行截图
+
+![项目运行截图](项目运行截图.png)
