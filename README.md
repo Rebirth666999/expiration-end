@@ -1,4 +1,4 @@
-保质期管理系统 - 后端服务 (Expiration Management System - Backend)
+# 保质期管理系统 - 后端服务 (Expiration Management System - Backend)
 
 本项目为物品保质期管理系统的后端核心服务。基于主流的 Java 技术栈搭建，采用分层架构设计，为前端（如微信小程序、Web 端）提供标准化、去耦合的 RESTful API 接口，实现用户身份鉴权与物品保质期的全生命周期管理。
 
