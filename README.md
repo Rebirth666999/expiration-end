@@ -13,12 +13,24 @@
 ### 二、项目结构
 
 ```text
-src/main/java/com/pzy/
-    SpringbootMybatisApplication.java  # 代表异步容器引导主类
-    controller/                        # 目录下是控制层：暴露 RESTful API 接口
-    entity/                            # 目录下是实体层：ORM 映射对象，例如 User 和 Product
-    repository/                        # 目录下是数据访问层：MyBatis Mapper/Repository 接口
-    service/                           # 目录下是业务逻辑层：核心业务规则加工
+src/main
+├── java
+│   └── com.pzy （项目根业务包，所有 Java 代码的统一包路径）
+│       ├── SpringbootMybatisApplication.java  # Spring Boot 项目启动主类：整个程序的运行入口，负责启动 Spring 容器、自动加载项目配置、扫描并注册所有业务组件
+│       ├── controller （控制层包）
+│       │   ├── ProductController.java          # 产品接口控制器：接收前端关于产品的 HTTP 请求，做基础参数校验，调用业务层处理逻辑后返回响应结果，包含产品新增、删除、按用户/类型查询等接口
+│       │   └── UserController.java             # 用户接口控制器：接收前端关于用户的 HTTP 请求，处理登录、注册的请求逻辑，调用业务层完成用户身份校验与账号注册
+│       ├── entity （实体层包）
+│       │   ├── Product.java                    # 产品实体类：和数据库产品表做 ORM 映射的 Java 类，封装产品的 id、名称、类型、保质期、所属用户ID 等核心属性
+│       │   └── User.java                       # 用户实体类：和数据库用户表做 ORM 映射的 Java 类，封装用户的 id、用户名、密码等核心属性
+│       ├── repository （数据访问层包）
+│       │   ├── ProductRepository.java          # 产品数据访问接口：继承 Spring Data JPA 的 JpaRepository，直接对接数据库，提供产品的基础增删改查能力，以及自定义条件查询方法
+│       │   └── UserRepository.java             # 用户数据访问接口：继承 Spring Data JPA 的 JpaRepository，提供用户的基础增删改查能力，以及按用户名查询用户的自定义方法
+│       └── service （业务逻辑层包）
+│           ├── ProductService.java             # 产品业务类：编写产品相关的具体业务逻辑，调用 Repository 层完成数据库操作，为 Controller 层提供业务能力
+│           └── UserService.java                # 用户业务类：编写用户查询、注册的具体业务逻辑，调用 Repository 层完成数据库操作，为 Controller 层提供业务能力
+└── resources （项目资源目录）
+    └── application.yml                          # 项目全局配置文件：集中配置服务器端口、数据库连接信息、日志输出规则、框架运行参数等所有项目配置项
 
 ```
 
